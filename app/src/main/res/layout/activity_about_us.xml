@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="ltr"
+    android:paddingStart="@dimen/padding25"
+    android:paddingEnd="@dimen/padding25"
+    android:fillViewport="true"
+    tools:context=".activity.AboutUsActivity">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_alignParentTop="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_left"
+                android:layout_width="@dimen/width_back"
+                android:layout_height="@dimen/height_back"
+                android:background="@drawable/bg_arrow"
+                android:padding="@dimen/padding12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_chevron_left" />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin10"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/back"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size13"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_left"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin30"
+        android:fontFamily="@font/circularstd_book"
+        android:lineSpacingMultiplier="1.4"
+        android:text="@string/about_us"
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/size15"
+        android:layout_below="@+id/appBarLayout" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin30"
+        android:fontFamily="@font/circularstd_bold"
+        android:text="@string/disclaimer"
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/size16"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin15"
+        android:fontFamily="@font/circularstd_book"
+        android:lineSpacingMultiplier="1.4"
+        android:text="@string/disclaimer1"
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/size15"
+        android:layout_below="@+id/textView6" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/developerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin10"
+        app:adSize="BANNER"
+        android:layout_below="@id/textView7"
+        android:layout_marginBottom="@dimen/margin10"
+        app:adUnitId="@string/banner3"
+   />
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:id="@+id/developerName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+          android:layout_marginBottom="@dimen/margin30">
+
+          <TextView
+              android:id="@+id/tv_develop"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/margin3"
+              android:text="@string/development"
+              android:textColor="@color/colorGrey"
+              android:textSize="@dimen/size13"
+              app:layout_constraintBottom_toTopOf="@+id/tv_reem"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <TextView
+              android:id="@+id/tv_reem"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/circularstd_book"
+              android:text="@string/reem_sibakhi"
+              android:textColor="@color/colorBlue"
+              android:textSize="@dimen/size16"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent" />
+
+          <ImageView
+              android:id="@+id/imageView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              app:srcCompat="@drawable/ic_chevron_right" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </RelativeLayout>
+
+</ScrollView>
+
+

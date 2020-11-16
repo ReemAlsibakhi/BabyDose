@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:background="@android:color/white"
+    tools:context=".activity.ResultActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/white"
+            android:elevation="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/margin25"
+                android:paddingStart="@dimen/margin25">
+
+                <ImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_info_outined_black" />
+
+                <ImageView
+                    android:id="@+id/img_left"
+                    android:layout_width="@dimen/width_back"
+                    android:layout_height="@dimen/height_back"
+                    android:background="@drawable/bg_arrow"
+                    android:padding="@dimen/padding12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_chevron_left" />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin10"
+                    android:fontFamily="@font/circularstd_book"
+                    android:text="@string/back"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/size13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_left"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/img_info"
+                    app:layout_constraintStart_toEndOf="@+id/tv_back"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_group3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+      <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin30"
+        android:layout_marginEnd="@dimen/margin25"
+        android:text="( 100 mcg ) per metered dose. 1-2 puffs up to 4-6 times in 24 hours as needed regardless of whether 1 or 2 puffs"
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/size20"
+        android:fontFamily="@font/circularstd_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin46"
+        android:layout_marginBottom="@dimen/margin25"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_patientAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/patient_age"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ageYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin7"
+                android:fontFamily="@font/circularstd_book"
+                android:text="3"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_patientAge" />
+
+            <TextView
+                android:id="@+id/tv_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin7"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/years"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_ageYear"
+                app:layout_constraintTop_toBottomOf="@+id/tv_patientAge" />
+
+            <TextView
+                android:id="@+id/tv_ageMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin7"
+                android:fontFamily="@font/circularstd_book"
+                android:text="3"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_years"
+                app:layout_constraintTop_toBottomOf="@+id/tv_patientAge" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin7"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/month"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_ageMonth"
+                app:layout_constraintTop_toBottomOf="@+id/tv_patientAge" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/patient_weight"
+                android:textColor="@color/colorGrey"
+                android:textSize="@dimen/size15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin7"
+                android:fontFamily="@font/circularstd_book"
+                android:text="20"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+            <TextView
+                android:id="@+id/weight_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5"
+                android:layout_marginTop="@dimen/margin7"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/kgs"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_weight"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_view"
+        android:layout_marginTop="@dimen/margin25"
+        android:background="@color/colorGreyLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraint" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin21"
+        android:text="@string/drug_name"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/size14"
+        android:fontFamily="@font/circularstd_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tv_drugName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin7"
+        android:layout_marginEnd="@dimen/margin25"
+        android:text="IRON SYRUP 50Mg Elemental Iron Per 5 Ml  Prophylaxis"
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/size15"
+        android:fontFamily="@font/circularstd_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_view"
+        android:layout_marginTop="@dimen/margin25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorGreyLight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_drugName" />
+    <TextView
+        android:id="@+id/tv_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin21"
+        android:text="@string/ref"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/size15"
+        android:fontFamily="@font/circularstd_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_guideLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin7"
+        android:layout_marginEnd="@dimen/margin25"
+        android:text="@string/stg_standard_treatment_guidlines"
+        android:textColor="@color/colorBlue"
+        android:textSize="@dimen/size15"
+        android:fontFamily="@font/circularstd_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ref" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guideLink"
+        app:srcCompat="@drawable/ic_group4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_guideLink"
+        app:srcCompat="@drawable/ic_group1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result"
+        app:srcCompat="@drawable/ic_group2" />
+
+    <TextView
+        android:id="@+id/tv_result2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin25"
+        android:layout_marginTop="@dimen/margin3"
+        android:layout_marginEnd="@dimen/margin25"
+        android:fontFamily="@font/circularstd_bold"
+        android:text=""
+        android:textColor="@color/colorBlack2"
+        android:textSize="@dimen/size20"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

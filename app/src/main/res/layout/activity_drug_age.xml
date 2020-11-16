@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layoutDirection="ltr"
+    android:fillViewport="true"
+    tools:context=".activity.DrugAgeActivity">
+
+ <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/margin25"
+                android:paddingStart="@dimen/margin25">
+
+
+                <ImageView
+                    android:id="@+id/img_info"
+                    android:layout_width="@dimen/width_info"
+                    android:layout_height="@dimen/height_info"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_info_outined_black" />
+
+                <ImageView
+                    android:id="@+id/img_left"
+                    android:layout_width="@dimen/width_back"
+                    android:layout_height="@dimen/height_back"
+                    android:background="@drawable/bg_arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:padding="@dimen/padding12"
+                    app:srcCompat="@drawable/ic_chevron_left" />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin10"
+                    android:text="@string/back"
+                    android:textSize="@dimen/size13"
+                    android:textColor="@color/colorGrey"
+                    android:fontFamily="@font/circularstd_book"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_left"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tv_drug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin25"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin25"
+            android:fontFamily="@font/circularstd_bold"
+            android:text="IRON SYRUP 50Mg Elemental Iron Per 5 Ml  Prophylaxis"
+            android:textColor="@color/colorBlack2"
+            android:textSize="@dimen/size25"
+            android:layout_below="@id/appBarLayout"
+             />
+
+        <TextView
+            android:id="@+id/tv_depends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin25"
+            android:layout_marginTop="@dimen/margin21"
+            android:background="@drawable/bg_tvdepend"
+            android:fontFamily="@font/circularstd_bold"
+            android:padding="@dimen/padding16"
+            android:text="@string/Depends_on_age"
+            android:textColor="@color/colorPink"
+            android:textSize="@dimen/size16"
+            android:layout_below="@+id/tv_drug" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin15"
+            android:layout_marginBottom="@dimen/margin15"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner1"
+            android:layout_below="@+id/tv_depends"
+            android:layout_above="@id/constraint_age"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_selector"
+            android:paddingTop="@dimen/padding25"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_ageYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin25"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/years2"
+                android:textColor="@color/colorGreenLight"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_years"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5"
+                android:fontFamily="@font/circularstd_book"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_ageYear"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin3"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/y"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_years"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5"
+                android:fontFamily="@font/circularstd_book"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size14"
+                app:layout_constraintStart_toEndOf="@+id/year"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin3"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/m"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size16"
+                app:layout_constraintStart_toEndOf="@+id/tv_month"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_addMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin25"
+                android:drawableStart="@drawable/ic_add"
+                android:fontFamily="@font/circularstd_book"
+                android:text="@string/add_month"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/size16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin30"
+                android:layout_marginBottom="@dimen/margin15"
+                app:layout_constraintBottom_toTopOf="@+id/number_picker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_years"
+                app:srcCompat="@drawable/ic_caret_down" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/number_picker"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_picker"
+                app:layout_constraintBottom_toTopOf="@+id/img_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_down"
+                app:np_dividerColor="@android:color/white"
+                app:np_dividerThickness="0dp"
+                app:np_dividerType="underline"
+                app:np_fadingEdgeEnabled="true"
+                app:np_height="@dimen/height_numberpicker"
+                app:np_max="20"
+                app:np_min="0"
+                app:np_orientation="horizontal"
+                app:np_selectedTextColor="@android:color/white"
+                app:np_selectedTextSize="@dimen/size30"
+                app:np_textColor="@color/colorGreenLight"
+                app:np_textSize="@dimen/size16"
+                app:np_typeface="@string/number_picker_formatter"
+                app:np_value="0"
+                app:np_width="@dimen/width_picker" />
+
+            <ImageView
+                android:id="@+id/img_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin15"
+                app:layout_constraintBottom_toTopOf="@+id/img_picker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/number_picker"
+                app:srcCompat="@drawable/ic_caret_top" />
+
+            <ImageView
+                android:id="@+id/img_picker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_picker"
+                android:layout_marginTop="@dimen/margin30"
+                android:layout_marginBottom="@dimen/margin30"
+                android:src="@drawable/picker"
+                app:layout_constraintBottom_toTopOf="@id/btn_cal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_top" />
+
+            <Button
+                android:id="@+id/btn_cal"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin25"
+                android:background="@drawable/bg_button"
+                android:elevation="0dp"
+                android:fontFamily="@font/circularstd_book"
+                android:paddingStart="@dimen/padding25"
+                android:paddingTop="@dimen/padding16"
+                android:paddingEnd="@dimen/padding25"
+                android:paddingBottom="@dimen/padding16"
+                android:text="@string/calculate_drug"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack2"
+                android:textSize="@dimen/size16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_picker" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_bottom_sheet" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</ScrollView>

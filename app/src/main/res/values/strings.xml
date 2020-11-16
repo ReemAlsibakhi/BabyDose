@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Baby Dose</string>
+
+    <string name="hi_dr">Hi, Dr.</string>
+    <string name="select_or_search_the_drug">Select or search the drug</string>
+    <string name="type_drug_name_here">type drug name here...</string>
+    <string name="back">Back</string>
+    <string name="depends_on_weight">Insert the weight</string>
+    <string name="Depends_on_age">Insert the age</string>
+    <string name="years">Years,</string>
+    <string name="patient_age">Patient age</string>
+    <string name="month">Month</string>
+    <string name="drug_name">Drug name</string>
+    <string name="stg_standard_treatment_guidlines">STG ( Standard Treatment Guidelines)</string>
+    <string name="ref">Ref.</string>
+    <string name="calculate_drug">Calculate drug</string>
+    <string name="patient_weight">Patient weight</string>
+    <string name="years2">Years:</string>
+    <string name="add_month">Add Month</string>
+    <string name="number_picker_formatter">formatter</string>
+    <string name="weight">Weight:</string>
+    <string name="y">Y, </string>
+    <string name="kgs">Kgs</string>
+    <string name="m">Month</string>
+
+    <string name="app_id">ca-app-pub-6748471295947388~3655471144</string>
+
+    <string name="banner1">ca-app-pub-6748471295947388/5915637126</string>
+    <string name="banner2">ca-app-pub-6748471295947388/4849735956</string>
+    <string name="banner3">ca-app-pub-6748471295947388/1157902950</string>
+
+    <!--    <string name="banner2">ca-app-pub-6748471295947388/4989568260</string>-->
+<!--    <string name="banner3">ca-app-pub-6748471295947388/3018011048</string>-->
+
+    //Drugs
+    <string name="Chlorpheniramine_syr">Chlorpheniramine syr 2 mg/5ml</string>
+
+    <string name="Amoxicillin_sus250">Amoxicillin sus 250 mg/5ml</string>
+
+    <string name="Azithromycin_sus200">Azithromycin sus 200 mg/5ml</string>
+
+    <string name="Cephalexin_sus250">Cephalexin sus 250 mg/5ml</string>
+
+    <string name="Salbutamol_inhale">Salbutamol (aerosol) inhaler</string>
+
+    <string name="Salbutamol_syr2">Salbutamol syr 2 mg/5ml</string>
+    <string name="Beclomethasone_inhaler">Beclomethasone inhaler</string>
+    <string name="Metronidazole_sus125">Metronidazole sus 125 mg/5ml</string>
+    <string name="Metronidazole_sus200">Metronidazole sus 200 mg/5ml</string>
+    <string name="AmoxicillinClavulanic_acid_sus250">Amoxicillin 250 mg/62 mg Clavulanic acid  sus /5ml</string>
+    <string name="Paracetamol_syr_orally120">Paracetamol syr orally 120 mg/5ml</string>
+    <string name="Co_trimethoprim_sus240">Co-trimoxazole sus 200/40 mg/5ml</string>
+    <string name="Fluconazolecap50mg_children">Fluconazole cap 50mg children</string>
+    <string name="IRON_SYRUP50mg_elemental_iron_Prophylaxis">IRON SYRUP 50mg elemental iron per 5 ml</string>
+    <string name="IRON_SYRUP50mg_elemental_iron_Treatment_below_8kg">IRON SYRUP 50mg below 8 kg weight or less than 1 year</string>
+    <string name="NYSTATIN_ORAL_SUSP">NYSTATIN ORAL SUSP</string>
+<!--    <string name="Cefuroxime_sus250">Cefuroxime sus 250 mg/5ml</string>-->
+<!--    <string name="Cefuroxime_sus125">Cefuroxime sus 125 mg/5ml</string>-->
+    <string name="about_us">The app aims to facilitate setting up the children\'s dose, which is generally directed for dear pharmacists and doctors colleagues. Also with all respect, it is directed to my colleagues at the clinic of UNRWA in particular. Most information in this app has references due to booklets that are: STG ( Standard Treatment Guidelines) , technical instructions on the management of 10 most common health conditions encountered in underway  healthcare facilities and the medical website (Medscape).</string>
+    <string name="development">Development</string>
+    <string name="reem_sibakhi">Reem Al-Sibakhi</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="disclaimer1">" calculations must be re-checked and should not be used alone to guide patient care , nor should they substitute for clinical judgment"</string>
+    <string name="family_health_unrwa">Family Health in UNRWA health program</string>
+    <string name="medscape">Medscape</string>
+
+    <string-array name="drugs">
+
+        <item>@string/Amoxicillin_sus250</item>
+
+        <item>@string/Azithromycin_sus200</item>
+
+        <item>@string/AmoxicillinClavulanic_acid_sus250</item>
+
+        <item>@string/Beclomethasone_inhaler</item>
+
+        <item>@string/Cephalexin_sus250</item>
+
+        <item>@string/Chlorpheniramine_syr</item>
+
+        <item>@string/Co_trimethoprim_sus240</item>
+
+<!--        <item>@string/Cefuroxime_sus250</item>-->
+
+<!--        <item>@string/Cefuroxime_sus125</item>-->
+        <item>@string/Fluconazolecap50mg_children</item>
+
+        <item>@string/IRON_SYRUP50mg_elemental_iron_Prophylaxis</item>
+
+        <item>@string/IRON_SYRUP50mg_elemental_iron_Treatment_below_8kg</item>
+
+        <item>@string/Metronidazole_sus125</item>
+
+        <item>@string/Metronidazole_sus200</item>
+
+        <item>@string/NYSTATIN_ORAL_SUSP</item>
+
+        <item>@string/Paracetamol_syr_orally120</item>
+
+        <item>@string/Salbutamol_inhale</item>
+
+        <item>@string/Salbutamol_syr2</item>
+
+    </string-array>
+</resources>

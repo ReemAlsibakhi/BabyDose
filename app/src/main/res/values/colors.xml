@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#1D6FDC</color> -->
+    <color name="colorPrimary">#34A7B2</color>
+    <color name="colorPrimaryDark">#071C26</color>
+    <color name="colorAccent">#34A7B2</color>
+
+    <color name="colorBlack">#071C26</color>
+    <color name="colorBlack2">#140B30</color>
+    <color name="colorGrey">#AFAFAF</color>
+    <color name="colorGreyLight">#F9F9F9</color>
+    <color name="colorPink">#FD5E53</color>
+    <color name="colorPinkLight">#FFEEED</color>
+    <color name="colorBlue">#5852FF</color>
+    <color name="colorBorderArrow">#F1F1F1</color>
+    <color name="colorGreen">#34A7B2</color>
+    <color name="colorGreenLight">#9AD3D9</color>
+    <color name="colorView">#EAEAEA</color>
+<!-- dialog picker -->
+    <color name="MPD_primaryColor">@color/colorPrimary</color>
+    <color name="MPD_primaryColorLight">#C5CAE9</color>
+    <color name="MPD_backGroundColor">#FFF</color>
+    <color name="MPD_pickerItemColorUnSelected">#00FFFFFF</color>
+    <color name="MPD_pickerItemColorSelected">@color/MPD_primaryColor</color>
+    <color name="MPD_pickerItemTextColorUnSelected">#444</color>
+    <color name="MPD_pickerItemTextColorSelected">#bbffffff</color>
+    <color name="MPD_pickerSelectedTextColor">#FFF</color>
+</resources>
