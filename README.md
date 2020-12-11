@@ -4,4 +4,5 @@ Most information in this app has references due to booklets that are: STG ( Stan
 healthcare facilities and the medical website (Medscape).
 
 
-![home](https://user-images.githubusercontent.com/37079395/101886543-b14d9f00-3bac-11eb-804a-5a2ea6e9d727.png)
+![home](https://user-images.githubusercontent.com/37079395/101886543-b14d9f00-3bac-11eb-804a-5a2ea6e9d727.png)       ![Drug](https://user-images.githubusercontent.com/37079395/101886666-de9a4d00-3bac-11eb-8594-1e6f6e2f2370.png)
+
